@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinky Promise Release</title>
+<meta name="description" content="Aleyna Kuzh, Pinky Promise: Musikvideo und alle Release Assets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0f14;--bg2:#0f161d;--ink:#e6ebee;--muted:#8a98a5;--line:rgba(230,235,238,.13);
+  --thread:#e3262f;--glow:rgba(227,38,47,.55);--teal:#3db6aa;--sodium:#f0a33f;
+  --display:"Big Shoulders Display","Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Manrope","Inter",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img,video{display:block;max-width:100%}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+
+/* Hero */
+.hero{position:relative;min-height:92vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:96px 0 64px}
+.hero::before{content:"";position:absolute;inset:0;background:url("assets/bild/poster_Aleyna_Kuzh_Pinky_Promise_Musikvideo.jpg") center/cover;filter:blur(3px) saturate(1.1);opacity:.32;transform:scale(1.06)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,transparent 0,rgba(10,15,20,.55) 55%,var(--bg) 100%)}
+.hero-in{position:relative;z-index:2}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--muted)}
+.artist{font-family:var(--body);font-weight:600;letter-spacing:.55em;font-size:clamp(13px,1.6vw,17px);margin-top:28px;text-indent:.55em}
+h1{font-family:var(--display);font-weight:900;color:var(--thread);font-size:clamp(76px,15vw,210px);line-height:.86;letter-spacing:-.01em;text-shadow:0 0 38px var(--glow),0 0 90px rgba(227,38,47,.25);margin-top:10px}
+.release{margin-top:26px;display:inline-flex;gap:14px;align-items:center;font-family:var(--display);font-weight:800;font-size:clamp(26px,3.4vw,40px);letter-spacing:.04em}
+.release .dot{width:9px;height:9px;border-radius:50%;background:var(--thread);box-shadow:0 0 12px var(--thread)}
+.hero-cta{margin-top:40px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-weight:600;font-size:14px;text-decoration:none;transition:.25s;cursor:pointer;color:var(--ink)}
+.btn:hover{border-color:var(--thread);box-shadow:0 0 0 1px var(--thread),0 0 24px var(--glow)}
+.btn.rot{background:var(--thread);border-color:var(--thread);color:#fff}
+.btn svg{width:16px;height:16px}
+.faden-box{width:min(1100px,100%);margin:6px auto -40px}
+svg.faden{display:block;width:100%;height:130px;pointer-events:none;overflow:visible}
+svg.faden path{fill:none;stroke:var(--thread);stroke-width:3.2;vector-effect:non-scaling-stroke;filter:drop-shadow(0 0 4px var(--thread)) drop-shadow(0 0 14px var(--thread)) drop-shadow(0 0 30px var(--glow));stroke-dasharray:3000;stroke-dashoffset:3000;animation:zieh 3.2s cubic-bezier(.6,.05,.2,1) .3s forwards}
+@keyframes zieh{to{stroke-dashoffset:0}}
+
+/* Sections */
+section{padding:88px 0}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:36px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.sec-head h2{font-family:var(--display);font-weight:800;font-size:clamp(40px,6vw,72px);line-height:.9;letter-spacing:.01em}
+.sec-head h2 em{font-style:normal;color:var(--thread)}
+.sec-head p{color:var(--muted);max-width:440px;font-size:15px}
+.nr{font-family:var(--mono);color:var(--thread);font-size:12px;letter-spacing:.3em;display:block;margin-bottom:10px}
+
+/* Musikvideo */
+.player{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.player video{width:100%;aspect-ratio:3/2;background:#000}
+
+/* Karten */
+.grid{display:grid;gap:22px}
+.g-hoch{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+.card:hover{border-color:rgba(227,38,47,.5);box-shadow:0 0 0 1px rgba(227,38,47,.25),0 18px 50px rgba(0,0,0,.45)}
+.media{position:relative;background:#000}
+.media video,.media img{width:100%;height:100%;object-fit:cover}
+.r916{aspect-ratio:9/16}.r169{aspect-ratio:16/9}.r11{aspect-ratio:1/1}
+.badge{position:absolute;top:12px;left:12px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;padding:5px 9px;border-radius:6px;background:rgba(10,15,20,.75);backdrop-filter:blur(6px);border:1px solid var(--line)}
+.badge.loop{left:auto;right:12px;color:var(--teal)}
+.body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.body h3{font-family:var(--display);font-weight:800;font-size:30px;line-height:1;letter-spacing:.02em}
+.specs{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--mono);font-size:11px;padding:4px 8px;border-radius:6px;border:1px solid var(--line);color:var(--muted)}
+.chip.ok{color:#9be3b0;border-color:rgba(155,227,176,.3)}
+.body p{color:var(--muted);font-size:14px}
+.dl{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;text-decoration:none;padding:10px 14px;border-radius:10px;border:1px solid var(--line);width:max-content;transition:.2s}
+.dl:hover{border-color:var(--thread);color:#fff;background:rgba(227,38,47,.12)}
+.dl svg{width:14px;height:14px}
+.yt-wide{grid-template-columns:1fr}
+.yt-wide .card{display:grid;grid-template-columns:1.7fr 1fr}
+.g-thumb{grid-template-columns:repeat(3,1fr)}
+.zoom{cursor:zoom-in}
+.tip{font-family:var(--mono);font-size:11px;color:var(--sodium);letter-spacing:.08em}
+
+/* Checkliste */
+.check{width:100%;border-collapse:collapse;font-size:14px}
+.check th,.check td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.check th{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--muted);font-weight:400;text-transform:uppercase}
+.check td:first-child{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.02em;white-space:nowrap}
+.check .hak{color:#9be3b0;font-weight:700}
+.tbl{overflow-x:auto}
+
+footer{padding:56px 0 72px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center}
+footer b{font-family:var(--display);color:var(--ink);font-size:22px;letter-spacing:.06em;font-weight:800}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;background:rgba(5,8,11,.94);display:none;place-items:center;z-index:50;padding:24px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-height:90vh;max-width:min(1400px,100%);border-radius:10px;box-shadow:0 0 60px rgba(227,38,47,.25)}
+
+@media (max-width:900px){
+  .g-hoch,.g-thumb{grid-template-columns:1fr 1fr}
+  .yt-wide .card{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .g-hoch,.g-thumb{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .hero{min-height:80vh}
+}
+@media (prefers-reduced-motion:reduce){svg.faden path{animation:none;stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in wrap">
+    <div class="kicker">Release Paket · Shuto Crew</div>
+    <div class="artist">ALEYNA KUZH</div>
+    <h1>PINKY<br>PROMISE</h1>
+    <div class="faden-box"><svg class="faden" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-40 150 C 180 40, 360 210, 560 120 S 820 30, 900 110 C 940 150, 980 150, 990 118 C 1000 86, 960 70, 945 95 C 930 120, 980 160, 1060 140 S 1300 60, 1480 120"/>
+  </svg></div>
+    <div class="release"><span class="dot"></span>DONNERSTAG 20.00</div>
+    <div class="hero-cta">
+      <a class="btn rot" href="#musikvideo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Musikvideo ansehen</a>
+      <a class="btn" href="#assets">Alle Assets</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="musikvideo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="nr">01</span><h2>Das <em>Musikvideo</em></h2></div>
+      <p>Finale Version mit Boomerangs, Doppelungen und Zoom Stößen in den Performance Szenen. Intro und Outro bleiben ruhig, ohne Schrift Effekte.</p>
+    </div>
+    <div class="player">
+      <video controls preload="metadata" playsinline poster="assets/bild/poster_Aleyna_Kuzh_Pinky_Promise_Musikvideo.jpg" src="assets/video/Aleyna_Kuzh_Pinky_Promise_Musikvideo.mp4"></video>
+    </div>
+    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <a class="dl" href="assets/video/Aleyna_Kuzh_Pinky_Promise_Musikvideo.mp4" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>Web Version laden (2:33)</a>
+      <span class="tip">Die Master Datei in voller Qualität kommt separat.</span>
+    </div>
+  </div>
+</section>
+
+<section id="assets" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="nr">02</span><h2>Hochformat <em>9:16</em></h2></div>
+      <p>Trailer, Out Now und Spotify Canvas. Jede Einstellung ist einzeln auf Aleyna ausgerichtet, die Endkarte zeichnet den roten Faden.</p>
+    </div>
+    <div class="grid g-hoch">
+      <article class="card">
+        <div class="media r916"><video controls preload="metadata" playsinline poster="assets/bild/poster_Aleyna_Kuzh_Pinky_Promise_01_Trailer_9x16.jpg" src="assets/video/Aleyna_Kuzh_Pinky_Promise_01_Trailer_9x16.mp4"></video><span class="badge">TRAILER</span></div>
+        <div class="body">
+          <h3>Trailer</h3>
+          <div class="specs"><span class="chip ok">9:16</span><span class="chip ok">10,4 s</span><span class="chip ok">DO 20.00</span><span class="chip">1080×1920</span></div>
+          <p>Der Refrain „Pinky Promise“ als Teaser, Endkarte mit Datum.</p>
+          <a class="dl" href="assets/video/Aleyna_Kuzh_Pinky_Promise_01_Trailer_9x16.mp4" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>Download</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media r916"><video controls preload="metadata" playsinline poster="assets/bild/poster_Aleyna_Kuzh_Pinky_Promise_02_Out_Now_9x16.jpg" src="assets/video/Aleyna_Kuzh_Pinky_Promise_02_Out_Now_9x16.mp4"></video><span class="badge">OUT NOW</span></div>
+        <div class="body">
+          <h3>Out Now</h3>
+          <div class="specs"><span class="chip ok">9:16</span><span class="chip ok">14,6 s</span><span class="chip ok">OUT NOW</span><span class="chip">1080×1920</span></div>
+          <p>Startet direkt auf dem Drop und zeigt andere Szenen als der Teaser.</p>
+          <a class="dl" href="assets/video/Aleyna_Kuzh_Pinky_Promise_02_Out_Now_9x16.mp4" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>Download</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media r916"><video autoplay muted loop playsinline preload="metadata" poster="assets/bild/poster_Aleyna_Kuzh_Pinky_Promise_03_Spotify_Canvas_9x16.jpg" src="assets/video/Aleyna_Kuzh_Pinky_Promise_03_Spotify_Canvas_9x16.mp4"></video><span class="badge">SPOTIFY CANVAS</span><span class="badge loop">∞ LOOP</span></div>
+        <div class="body">
+          <h3>Spotify Canvas</h3>
+          <div class="specs"><span class="chip ok">9:16</span><span class="chip ok">7,8 s</span><span class="chip ok">nahtlose Schleife</span><span class="chip">ohne Ton</span></div>
+          <p>Knapp unter 8 Sekunden. Das Ende blendet weich in den Anfang, so läuft der Loop ohne Sprung.</p>
+          <a class="dl" href="assets/video/Aleyna_Kuzh_Pinky_Promise_03_Spotify_Canvas_9x16.mp4" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>Download</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="youtube" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="nr">03</span><h2>YouTube <em>16:9</em></h2></div>
+      <p>Langer Trailer für YouTube mit Endkarte „Donnerstag 20.00“.</p>
+    </div>
+    <div class="grid yt-wide">
+      <article class="card">
+        <div class="media r169"><video controls preload="metadata" playsinline poster="assets/bild/poster_Aleyna_Kuzh_Pinky_Promise_04_YouTube_Trailer_16x9.jpg" src="assets/video/Aleyna_Kuzh_Pinky_Promise_04_YouTube_Trailer_16x9.mp4"></video><span class="badge">YOUTUBE TRAILER</span></div>
+        <div class="body">
+          <h3>YouTube Trailer</h3>
+          <div class="specs"><span class="chip ok">16:9</span><span class="chip ok">18,2 s</span><span class="chip ok">Donnerstag 20.00</span><span class="chip">1920×1080</span></div>
+          <p>Gleicher Refrain wie der Trailer, länger ausgespielt bis „Unreleased“.</p>
+          <a class="dl" href="assets/video/Aleyna_Kuzh_Pinky_Promise_04_YouTube_Trailer_16x9.mp4" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>Download</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="thumbnails" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="nr">04</span><h2>YouTube <em>Thumbnails</em></h2></div>
+      <p>Sechs Vorschläge mit Artist und Songtitel, 1280 × 720 Pixel.</p>
+    </div>
+    <div class="grid g-thumb" id="thumbs"></div>
+  </div>
+</section>
+
+<section id="check" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="nr">05</span><h2>Checkliste <em>Label</em></h2></div>
+      <p>Alle Vorgaben aus der Asset Liste, abgehakt.</p>
+    </div>
+    <div class="tbl">
+      <table class="check">
+        <thead><tr><th>Asset</th><th>Vorgabe</th><th>Geliefert</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Trailer</td><td>9:16, 8 bis 12 s, Text DO 20.00</td><td>9:16, 10,4 s, DO 20.00</td><td class="hak">✓</td></tr>
+          <tr><td>Out Now</td><td>9:16, bis 15 s, Text Out Now, andere Szenen als im Teaser</td><td>9:16, 14,6 s, OUT NOW, Drop und neue Szenen</td><td class="hak">✓</td></tr>
+          <tr><td>Spotify Canvas</td><td>9:16, max. 8 s, minimal kürzer, Loop</td><td>9:16, 7,8 s, nahtlose Schleife</td><td class="hak">✓</td></tr>
+          <tr><td>YouTube Trailer</td><td>16:9, 16 bis 20 s, Text Donnerstag 20.00</td><td>16:9, 18,2 s, DONNERSTAG 20.00</td><td class="hak">✓</td></tr>
+          <tr><td>YouTube Thumbnail</td><td>Vorschläge mit Artist und Songtitel</td><td>6 Vorschläge, 1280 × 720</td><td class="hak">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>PINKY PROMISE</b>
+    <p style="margin-top:8px">Aleyna Kuzh · Regie und Schnitt Nader Ait-Laouad · Shuto Crew</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+const DL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>';
+const THUMBS=[
+  ["1","Glasgang, Blockschrift","Thumbnail_Vorschlag_1_echt_1_flur_tuerkis.jpg"],
+  ["2","Lampions, Signatur","Thumbnail_Vorschlag_2_stil_2_rote_blockschrift_signatur.jpg"],
+  ["3","Glasgang, Chrom","Thumbnail_Vorschlag_3_gang_1_chrom.jpg"],
+  ["4","Glasgang, Chrom und Rauch","Thumbnail_Vorschlag_4_gang_3_chrom_rauch.jpg"],
+  ["5","Parkhaus, 00:00","Thumbnail_Vorschlag_5_02_parkhaus_00uhr.jpg"],
+  ["6","Straße, Neonschrift","Thumbnail_Vorschlag_6_echt_2_strasse_neonschrift.jpg"]
+];
+function karten(el,list,ratio,label,specs){
+  el.innerHTML=list.map(([n,t,f])=>`
+    <article class="card">
+      <div class="media ${ratio} zoom" data-src="assets/bild/${f}"><img loading="lazy" src="assets/bild/${f}" alt="${label} ${n}: ${t}"><span class="badge">${label} ${n}</span></div>
+      <div class="body">
+        <h3>${t}</h3>
+        <div class="specs">${specs}</div>
+        <a class="dl" href="assets/bild/${f}" download>${DL}Download</a>
+      </div>
+    </article>`).join("");
+}
+karten(document.getElementById("thumbs"),THUMBS,"r169","VORSCHLAG",'<span class="chip ok">1280×720</span><span class="chip ok">Artist und Titel</span>');
+const lb=document.getElementById("lb");
+document.addEventListener("click",e=>{
+  const z=e.target.closest(".zoom");
+  if(z){lb.querySelector("img").src=z.dataset.src;lb.classList.add("on");return}
+  if(e.target.closest("#lb"))lb.classList.remove("on");
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("on")});
+// nur ein Video mit Ton gleichzeitig
+document.querySelectorAll("video[controls]").forEach(v=>v.addEventListener("play",()=>{
+  document.querySelectorAll("video[controls]").forEach(o=>{if(o!==v)o.pause()});
+}));
+</script>
+</body>
+</html>
